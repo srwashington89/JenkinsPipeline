@@ -30,9 +30,9 @@ pipeline {
       }
     }
     stage('Checkpoint') {
+      agent none
       steps {
-        agent none
-        checkpoint 'Checkpoint'
+              checkpoint 'Checkpoint'
       }
     }
     stage('Testing') {
